@@ -21,9 +21,7 @@
     "deploy:opt-sepolia:erc20-selective-disclosure-verifier": "npx hardhat run scripts/deployERC20SelectiveDisclosureVerifier.ts --network opt-sepolia",
     "upgrade:opt-sepolia:sigv2": "npx hardhat run scripts/upgradeSigValidator.ts --network opt-sepolia",
     "upgrade:opt-sepolia:mtpv2": "npx hardhat run scripts/upgradeMTPValidator.ts --network opt-sepolia",
-    "setrequests:opt-sepolia:v2": "npx hardhat run scripts/setRequests-v2validator.ts --network opt-sepolia",
-    "setrequests:opt-sepolia:v3": "npx hardhat run scripts/setRequests-v3validator.ts --network opt-sepolia",
-    "setrequests:opt-sepolia:v3-sd": "npx hardhat run scripts/setRequests-v3validator-sd.ts --network opt-sepolia",
+    "setrequests:opt-sepolia": "npx hardhat run scripts/setRequests.ts --network opt-sepolia",
     "format": "prettier --write scripts/*.ts test/**/*.ts",
     "lint:contracts": "npx solhint contracts/**/*.sol",
     "prettier:contracts": "prettier --write --plugin=prettier-plugin-solidity 'contracts/**/*.sol'"
